@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Greetings</title>
+</head>
+<body>
+       <ul>
+           <li th:each="greeting: ${greetings}">
+               <span th:text="${greeting.text}"></span>
+               (in <span th:text="${greeting.language}"></span>)
+           </li>
+       </ul>
+</body>
+</html>
